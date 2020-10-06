@@ -59,6 +59,14 @@
 4.  API 规范
 
     -   一定程度上 符合 RESTful 规范
+    
+5.  第三方库
+
+    -   pyjwt
+    -   pymysql
+    -   Pillow (PIL) <pip-20.2.3 与 PIL冲突， pip-20.2.1 可下载>
+    -   django-cors-headers (3.1.0) <3.5.0, 强制升级djagno>
+        
 
 ## 数据库结构
 
@@ -109,8 +117,8 @@
 | :-------: | :--------------: | :---: | :---: |
 | username  |      用户名      | char  | 必填  |
 |   email   |     用户邮箱     | char  | 必填  |
-| password1 | 第一次输入的密码 | char  | 必填  |
-| password2 | 第二次输入的密码 | char  | 必填  |
+| password_1 | 第一次输入的密码 | char  | 必填  |
+| password_2 | 第二次输入的密码 | char  | 必填  |
 
 -   请求示例：
     -   `{'username':'xxx','email':'xxx','password1':'xxx','password2':'xxx'}`
